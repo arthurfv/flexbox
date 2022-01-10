@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align 2</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;   
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: blueviolet;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stretch</h1>
+    <div class="container stretch">
+    <div class="item">A--------A</div>
+    <div class="item">B-----------------B</div>
+    <div class="item">C-----------------------C</div>
+    <div class="item">D----------------------------------D</div>
+    <div class="item">E-------------------------------------------------------E</div>
+    <div class="item">F-----------------------------------------------------------------------------F</div>
+
+    </div>
+    <h1>Center</h1>
+    <div class="container center">
+        <div class="item">A--------A</div>
+        <div class="item">B-----------------B</div>
+        <div class="item">C-----------------------C</div>
+        <div class="item">D----------------------------------D</div>
+        <div class="item">E-------------------------------------------------------E</div>
+        <div class="item">F-----------------------------------------------------------------------------F</div>
+    
+        </div>
+</body>
+</html>

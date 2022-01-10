@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fwrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 600px;
+        }
+        .item{
+            font-size: 20px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: chartreuse;
+        }
+        .red{
+            background-color:salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container nowrap">
+        <div class="item blue">A</div>
+        <div class="item green">B</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+
+    </div>
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item blue">A</div>
+        <div class="item green">B</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+
+    </div>  
+    
+    <h1>wrap reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item blue">A</div>
+        <div class="item green">B</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+        <div class="item red">C</div>
+
+    </div>    
+</body>
+</html>

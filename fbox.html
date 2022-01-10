@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .flex-container{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            list-style: none;
+            max-width: 250px;
+            
+        }
+
+        .flex-item{
+            background-color: crimson;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .row{
+            flex-direction: row;
+        }
+
+        .row-reverser{
+            flex-direction: row-reverse;
+            
+        }
+
+        .row-reverser li{
+            background-color: blue;
+            color: white;
+        }
+        
+        .columm{
+            flex-direction: column;
+            float: left;
+        }
+        .columm li{
+            background-color: green;
+            color: white;
+        }
+
+        .columm-reverser{
+            flex-direction: column-reverse;
+            float: left;
+        }
+
+        .columm-reverser li{
+         background-color: palevioletred;
+         color: white;   
+        }
+    </style>
+</head>
+<body>
+     <ul class="flex-container row">
+         <li class="flex-item">A</li>
+         <li class="flex-item">B</li>
+         <li class="flex-item">C</li>
+         <li class="flex-item">D</li>
+         <li class="flex-item">E</li>     
+     </ul>
+     <ul class="flex-container row-reverser">
+        <li class="flex-item">A</li>
+        <li class="flex-item">B</li>
+        <li class="flex-item">C</li>
+        <li class="flex-item">D</li>
+        <li class="flex-item">E</li>     
+    </ul>
+    <ul class="flex-container columm">
+        <li class="flex-item">A</li>
+        <li class="flex-item">B</li>
+        <li class="flex-item">C</li>
+        <li class="flex-item">D</li>
+        <li class="flex-item">E</li>     
+    </ul>
+    <ul class="flex-container columm-reverser">
+        <li class="flex-item">A</li>
+        <li class="flex-item">B</li>
+        <li class="flex-item">C</li>
+        <li class="flex-item">D</li>
+        <li class="flex-item">E</li>     
+    </ul>                              
+</body>
+</html>
